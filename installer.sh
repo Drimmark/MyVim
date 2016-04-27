@@ -92,6 +92,8 @@ let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go']  }\n
 set number\n
 set mouse=a\n
 set completeopt-=preview\n
+set textwidth=0\n 
+set nowrap\n
 \n
 let g:go_disable_autoinstall = 0\n
 \n
@@ -111,9 +113,11 @@ let g:neocomplete#enable_auto_select = 0\n
 \" FileTree\n
 map <silent> <C-n> :NERDTreeToggle<CR>\n
 \n
-\" Tabs with NerdTree\n
+\" Tabs shortcuts\n
 map <silent> <C-t> :tabnew<CR>\n
 map <silent> <Tab> :tabNext<CR>\n
+map <C-h> :wincmd h<CR>\n
+map <C-l> :wincmd l<CR>\n
 \n
 \" Auto indent\n
 map <silent> <F7> mzgg=G\`z<CR>\n
@@ -143,6 +147,8 @@ let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go']  }\n
 set number\n
 set mouse=a\n
 set completeopt-=preview\n
+set textwidth=0\n 
+set nowrap\n
 \n
 let g:go_disable_autoinstall = 0\n
 \n
@@ -161,7 +167,7 @@ let g:neocomplete#enable_at_startup = 1\n
 \" FileTree\n
 map <silent> <C-n> :NERDTreeToggle<CR>\n
 \n
-\" Split with NerdTree\n
+\" Split shortcuts\n
 map <C-t> :vsplit<CR>\n
 map <C-h> :wincmd h<CR>\n
 map <C-l> :wincmd l<CR>\n
