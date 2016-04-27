@@ -101,7 +101,7 @@ set nowrap\n
 \n
 \" Multiple cursors\n
 let g:multi_cursor_use_default_mapping=0\n
-let g:multi_cursor_next_key='<C-d>'\n
+let g:multi_cursor_next_key='<C-m>'\n
 let g:multi_cursor_quit_key='<ESC>'\n
 \n
 let g:go_disable_autoinstall = 0\n
@@ -161,7 +161,7 @@ set nowrap\n
 \n
 \" Multiple cursors\n
 let g:multi_cursor_use_default_mapping=0\n
-let g:multi_cursor_next_key='<C-d>'\n
+let g:multi_cursor_next_key='<C-m>'\n
 let g:multi_cursor_quit_key='<ESC>'\n
 \n
 let g:go_disable_autoinstall = 0\n
