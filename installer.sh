@@ -63,6 +63,10 @@ git clone -q https://github.com/scrooloose/nerdtree.git $HOMEPATH/.vim/bundle/ne
 echo "---Installing neocomplete..."
 git clone -q https://github.com/Shougo/neocomplete.vim.git $HOMEPATH/.vim/bundle/neocomplete.vim
 
+#Download vim-multiple-cursors
+echo "---Installing vim-multiple-cursors"
+git clone -q https://github.com/terryma/vim-multiple-cursors.git $HOMEPATH/.vim/bundle/vim-multiple-cursors
+
 #Download monokai color schema
 echo "---Installing monokai color schema..."
 git clone -q https://github.com/sickill/vim-monokai.git
@@ -94,6 +98,11 @@ set mouse=a\n
 set completeopt-=preview\n
 set textwidth=0\n 
 set nowrap\n
+\n
+\" Multiple cursors\n
+let g:multi_cursor_use_default_mapping=0\n
+let g:multi_cursor_next_key='<C-d>'\n
+let g:multi_cursor_quit_key='<ESC>'\n
 \n
 let g:go_disable_autoinstall = 0\n
 \n
@@ -149,6 +158,11 @@ set mouse=a\n
 set completeopt-=preview\n
 set textwidth=0\n 
 set nowrap\n
+\n
+\" Multiple cursors\n
+let g:multi_cursor_use_default_mapping=0\n
+let g:multi_cursor_next_key='<C-d>'\n
+let g:multi_cursor_quit_key='<ESC>'\n
 \n
 let g:go_disable_autoinstall = 0\n
 \n
