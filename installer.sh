@@ -127,11 +127,16 @@ map <silent> <C-t> :tabnew<CR>\n
 map <silent> <Tab> :tabNext<CR>\n
 map <C-h> :wincmd h<CR>\n
 map <C-l> :wincmd l<CR>\n
+map <C-w> :tabclose<CR>\n
+map <C-Left> :tabprevious<CR>\n
+map <C-Right> :tabnext<CR>\n
 \n
 \" Auto indent\n
 map <silent> <F7> mzgg=G\`z<CR>\n
 \" Undo\n
 map <silent> <C-z> :u <CR>
+\" Save\n
+map <silent> <C-s> :w <CR>
 "
 
 SPLIT="
@@ -190,6 +195,8 @@ map <C-l> :wincmd l<CR>\n
 map <silent> <F7> mzgg=G\`z<CR>\n
 \" Undo\n
 map <silent> <C-z> :u <CR>
+\" Save\n
+map <silent> <C-s> :w <CR>
 "
 
 if [ "$1" = "t" ]; then
