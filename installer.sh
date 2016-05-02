@@ -24,7 +24,7 @@ done
 HOMEPATH="/home/$2"
 cd $HOMEPATH
 
-echo "
+echo -ne "
 \t##########################
 \t#  VIM ENV INSTALLATION  #
 \t##########################
@@ -193,9 +193,9 @@ map <silent> <C-z> :u <CR>
 "
 
 if [ "$1" = "t" ]; then
-	echo $TABS > $HOMEPATH/.vimrc
+	echo -ne $TABS > $HOMEPATH/.vimrc
 else
-	echo $SPLIT > $HOMEPATH/.vimrc
+	echo -ne $SPLIT > $HOMEPATH/.vimrc
 fi
 
 echo "---Setting permissions to vim configuration folder..."
@@ -215,7 +215,7 @@ chown -R $2:$2 $HOMEPATH/.vimrc
 #\t##########################
 #"
 
-echo "
+echo -ne "
 \t##########################
 \t#         DONE!          #
 \t##########################
